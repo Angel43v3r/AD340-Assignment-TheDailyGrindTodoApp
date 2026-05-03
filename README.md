@@ -90,11 +90,9 @@ npm install
 npx expo start
 ```
 
-- Scan QR code with Expo Go app on your phone
-- Or press:
- - a -> Android emulator (Make sure Android studio is installed)
- - i -> iOS simulator (Mac only)
- - w -> web browser
+- To use **Expo Go:** Scan QR code with Expo Go app on your phone
+- To use **Android Studio:** Open Android Studio, then open the project folder (Make sure Android studio is installed). Press `a -> Android emulator` in your bash or terminal.
+ - To use **iOS simulator (Mac Only):** Press i -> iOS simulator (Mac only).
 
 
 ## Contributing
