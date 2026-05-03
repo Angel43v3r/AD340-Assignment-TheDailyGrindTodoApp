@@ -42,11 +42,11 @@ Make sure you have the following installed:
     - **Expo Go** is a mobile app that allows you to quickly preview and test React Native apps on your physical device.
     - It is useful for rapid development without needing a full Android or iOS build setup.
     - You can download from the [Expo Go official website](https://expo.dev/go).
-    - The following step is **only needed if you are creating a new React Native project using Expo Go**.
+    - The following step is **only needed if you are creating a new React Native project using Expo Go**:
 
-```bash
-npx create-expo-app@latest --template
-```
+    ```bash
+    npx create-expo-app@latest --template
+    ```
 
  *Note: To check version installed in your terminal or bash:*
  ```
