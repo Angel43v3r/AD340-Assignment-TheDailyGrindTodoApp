@@ -90,9 +90,20 @@ npm install
 npx expo start
 ```
 
-- To use **Expo Go:** Scan QR code with Expo Go app on your phone
-- To use **Android Studio:** Open Android Studio, then open the project folder (Make sure Android studio is installed). Press `a -> Android emulator` in your bash or terminal.
- - To use **iOS simulator (Mac Only):** Press i -> iOS simulator (Mac only).
+7. Once the server starts, Expo Dev Tool will open in your browser and a QR code will be displayed in the terminal.
+
+You can then choose on eof the following options:
+- Scan QR code (Recommended):
+ - This opens the **Expo Go** app on your mobile device. Make sure that Expo Go app is installed on your phone.
+ - If the QR code does not scan, make sure your phone and computer are on the same Wi-Fi network.
+- use **Android Studio** Emulator:
+ - Make sure the Android Studio is running.
+    - You need to open the **Android Studio** in your server, then navigate and open the project folder root. Make sure Android studio is installed. 
+ - Press `a -> Android emulator` in your bash or terminal.
+- use **iOS simulator (Mac Only)**:
+ - Press i -> iOS simulator (Mac only).
+- Run on **Web Browser**:
+ - Press w -> open web
 
 
 ## Contributing
