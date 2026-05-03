@@ -27,23 +27,19 @@ Make sure you have the following installed:
     - This project uses **Node.js 20 (LTS line)** to run the local development server and manage dependencies. You can download from [Node.js official website](https://nodejs.org/en/).
 
 - **Node Package Manager (npm)**: Version 11.6.2 or higher (comes bundled with Node.js)
- - This project use npm to manage the libraries for the project, this comes pre-bundled with Node.js.
+    - This project use npm to manage the libraries for the project, this comes pre-bundled with Node.js.
 
-- **React Native CLI**
-    - This project uses the **React Native CLI** to build and run the app native on Android and iOS devices.
-    - It allows direct access to native modules and full control over the development environment.
-    - You can run the project using `npx react-native` commands.
-    - You might also have to install the required development dependency (optional):
-```bash
-npm install --save-dev @react-native-community/cli
-npm install --save-dev @react-native/metro-config
-```
+- **Expo**
+    - This project uses **Expo** to build and run the app on Android and iOS devices.
+    - It simplifies setup by handling native configuration and build tools automatically
 
-- **Android Studio** or **Expo Go**
+- **Android Studio** (Optional)
     - **Android Studio** is required to run the app on an Android emulator or a physical device.
     - It provides the Android SDK, emulator, and build tools needed for React Native development.
     - You can download from the [Android Studio official website](https://developer.android.com/studio).
-- **Expo Go** is a mobile app that allows you to quickly preview and test React Native apps on your physical device.
+
+- **Expo Go** (Optional)
+    - **Expo Go** is a mobile app that allows you to quickly preview and test React Native apps on your physical device.
     - It is useful for rapid development without needing a full Android or iOS build setup.
     - You can download from the [Expo Go official website](https://expo.dev/go).
     - The following step is **only needed if you are creating a new React Native project using Expo Go**.
