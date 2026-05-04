@@ -130,11 +130,12 @@ export default function TaskScreen() {
           </TouchableOpacity>
         </View>
 
-        <Text style={styles.title}>Todo:</Text>
-
-        <TouchableOpacity style={styles.button} onPress={clearAll}>
-          <Text style={styles.buttonText}>Clear All</Text>
-        </TouchableOpacity>
+        <View style={styles.todoClearAllLayout}>
+          <Text style={styles.title}>Todo:</Text>
+          <TouchableOpacity style={styles.button} onPress={clearAll}>
+            <Text style={styles.buttonText}>Clear All Task(s)</Text>
+          </TouchableOpacity>
+        </View>
 
         <FlatList
           data={todos}
@@ -291,4 +292,9 @@ const styles = StyleSheet.create({
     margin: 16,
     color: '#412f3d',
   },
+  todoClearAllLayout: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  }
 });
