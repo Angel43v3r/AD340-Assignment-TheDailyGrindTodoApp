@@ -29,7 +29,7 @@ const deleteTask = (todos: Task[], id: string): Task[] =>
 const clearAll = (todos: Task[]): Task[] => [];
 
 // ---- Normal Cases ----
-describe('Test Cases', () => {
+describe('Task Screen Test Cases', () => {
   test('adds a task with correct text and priority', () => {
     const result = addTask([], 'Buy coffee', 'high');
     expect(result).toHaveLength(1);
