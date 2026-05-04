@@ -11,6 +11,9 @@
     "lint": "expo lint",
     "test": "vitest"
   },
+  "vitest": {
+    "include": ["test/**/*.test.ts"]
+  },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
     "@react-navigation/bottom-tabs": "^7.4.0",

@@ -9,8 +9,9 @@
 ## Table Of Contents
 1. [Objective](#objective)
 2. [How to Use](#how-to-use)
-3. [Contributing](#contributing)
-4. [License](#license)
+3. [Running Test](#running-test)
+4. [Contributing](#contributing)
+5. [License](#license)
 
 
 ## Objective
@@ -49,7 +50,7 @@ Make sure you have the following installed:
     ```
 
  *Note: To check version installed in your terminal or bash:*
- ```
+ ```bash
  node -v
  npm -v
  npx -v
@@ -58,13 +59,13 @@ Make sure you have the following installed:
 ### Installation & Environment Setup
 1. Go to your terminal or bash, navigate to the folder you want to save the project:
 
-```
+```bash
 cd <Folder_Name>
 ```
 2. Clone the Repository
 In the folder you want to save your project in, run:
 
-```
+```bash
 git clone git@github.com:Angel43v3r/AD340-Assignment-TheDailyGrindTodoApp.git
 ```
 
@@ -75,7 +76,7 @@ cd AD340-Assignment-TheDailyGrindTodoApp/TheDailyGrindTodoApp
 ```
 
 4. Install dependencies listed in package.json
-```
+```bash
 npm install
 ```
 
@@ -100,6 +101,54 @@ npx expo start
         - Press i -> iOS simulator (Mac only).
     - Run on **Web Browser**:
         - Press w -> open web
+
+
+
+## Running Test
+This project uses Vitest as the test runner.
+
+### Installation
+If not already installed, in the `TheDailyGrindTodoApp` or `React Native root` folder:
+```bash
+npm install -D vitest
+```
+
+### Test Setup
+Make sure your `package.json` should include:
+```json
+"scripts": {
+    "test": "vitest",
+},
+"vitest": {
+    "include": ["test/**/*.test.ts"]
+},
+"devDependencies": {
+    "vitest": "^2.0.0"
+}
+```
+
+Make sure your test folder structure should look like below:
+```
+TheDailyGrindTodoApp/
+├── app/
+│   ├── _layout.tsx
+│   ├── index.tsx
+│   └── task.tsx
+├── test/
+│   ├── index.test.ts
+│   └── task.test.ts
+```
+
+### Run Test
+In your bash or terminal, navigate to the React Native root folder (TheDailyGrindTodoApp):
+```bash
+npm test
+```
+
+**-OR-** run tests once (CI mode):
+```bash
+npx vitest run
+```
 
 
 ## Contributing

@@ -54,6 +54,8 @@ export default function TaskScreen() {
     );
   };
 
+  const clearAll = () => newTodo([]);
+
   const displayItem = ({ item, index }: { item: Task; index: number }) => (
     <View style={styles.item}>
       {/* LEFT SIDE: Checkbox + Text */}
@@ -130,6 +132,10 @@ export default function TaskScreen() {
 
         <Text style={styles.title}>Todo:</Text>
 
+        <TouchableOpacity style={styles.button} onPress={clearAll}>
+          <Text style={styles.buttonText}>Clear All</Text>
+        </TouchableOpacity>
+
         <FlatList
           data={todos}
           keyExtractor={item => item.id}
@@ -137,6 +143,7 @@ export default function TaskScreen() {
           showsVerticalScrollIndicator={true}
           contentContainerStyle={{ paddingBottom: 40 }}
         />
+
       </View>
     </KeyboardAvoidingView>
   );
